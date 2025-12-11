@@ -1,4 +1,3 @@
-import Reveal from "@/components/frontend/Reveal";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function FAQSection() {
@@ -47,7 +46,6 @@ export default function FAQSection() {
     return (
         <>
             {/* faq section start */}
-            <Reveal className="w-full">
                 <div className="relative flex w-full max-w-full flex-col items-center justify-center bg-neutral-950 pt-10 sm:py-10 px-2 sm:px-16">
                     <h2 className="text-yellow-400 text-lg md:text-xl font-bold">
                         FAQ
@@ -75,7 +73,6 @@ export default function FAQSection() {
 
                     </Accordion>
                 </div>
-            </Reveal >
             {/* faq section end */}
         </>
     )

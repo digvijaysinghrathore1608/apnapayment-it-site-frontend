@@ -1,4 +1,3 @@
-import Reveal from "@/components/frontend/Reveal";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
@@ -6,7 +5,6 @@ export default function OurVisionSection() {
     return (
         <>
             {/* ourvision section start */}
-            <Reveal>
                 <div className="relative flex w-full max-w-full flex-col items-start justify-center bg-neutral-950 pt-10 sm:py-10 px-2 sm:px-16">
                     <span className="text-yellow-400 text-lg md:text-xl font-bold">
                         Our Vision
@@ -20,7 +18,6 @@ export default function OurVisionSection() {
                     <HoverEffect items={projects} />
                     <BackgroundBeams />
                 </div>
-            </Reveal >
             {/* ourvision section end */}
         </>
     )

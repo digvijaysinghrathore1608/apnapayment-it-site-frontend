@@ -11,12 +11,14 @@ import {
     MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import Footer from "@/components/frontend/footer-section";
+import Link from "next/link";
 
 export function NavbarComponent({ children }: { children?: React.ReactNode }) {
     const navItems = [
         {
             name: "Services",
-            link: "#services",
+            link: "/services",
         },
         {
             name: "Solutions",
@@ -24,7 +26,7 @@ export function NavbarComponent({ children }: { children?: React.ReactNode }) {
         },
         {
             name: "About Us",
-            link: "#about-us",
+            link: "/about-us",
         },
         {
             name: "Portfolio",
@@ -69,14 +71,14 @@ export function NavbarComponent({ children }: { children?: React.ReactNode }) {
                         onClose={() => setIsMobileMenuOpen(false)}
                     >
                         {navItems.map((item, idx) => (
-                            <a
+                            <Link
                                 key={`mobile-link-${idx}`}
                                 href={item.link}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="relative text-neutral-600 dark:text-neutral-300"
                             >
                                 <span className="block">{item.name}</span>
-                            </a>
+                            </Link>
                         ))}
                         <div className="flex w-full flex-col gap-4">
                             <NavbarButton
@@ -92,6 +94,8 @@ export function NavbarComponent({ children }: { children?: React.ReactNode }) {
             </Navbar>
             {children}
             {/* Navbar */}
+            <div className="my-1"></div>
+            <Footer/>
         </div>
     );
 }

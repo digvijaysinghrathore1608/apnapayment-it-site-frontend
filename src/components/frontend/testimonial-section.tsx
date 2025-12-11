@@ -1,6 +1,5 @@
 "use client";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
-import Reveal from "@/components/frontend/Reveal";
 
 export default function TestimonialSection() {
     const testimonials = [
@@ -43,7 +42,7 @@ export default function TestimonialSection() {
     return (
         <>
             {/* expertise section start */}
-            <Reveal className="w-full">
+            <div className="w-full">
                 <div className="relative flex max-w-full flex-col items-center justify-center mx-2 sm:mx-16">
                     <div className="px-4 py-10 md:py-20">
                         {/* Heading */}
@@ -53,7 +52,7 @@ export default function TestimonialSection() {
                         <AnimatedTestimonials testimonials={testimonials} />
                     </div>
                 </div>
-            </Reveal>
+            </div>
         </>
     );
 }
