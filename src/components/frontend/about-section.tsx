@@ -1,4 +1,3 @@
-import Reveal from "@/components/frontend/Reveal";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { WobbleCard } from "@/components/ui/wobble-card";
 
@@ -6,7 +5,6 @@ export default function AboutSection() {
     return (
         <>
             {/* about section start */}
-            <Reveal>
                 <div className="relative flex w-full max-w-full flex-col items-start justify-center bg-neutral-950 pt-10 sm:py-10 px-2 sm:px-16">
                     <span className="text-yellow-400 text-lg md:text-xl font-bold">
                         Looking for Reliable IT Solutions?
@@ -20,7 +18,6 @@ export default function AboutSection() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full my-10">
                         {services.map((service, index) => (
-                            <Reveal key={`service-item-reveal-${index}`}>
                                 <WobbleCard
                                     key={index}
                                     containerClassName={`col-span-1 min-h-[300px] ${service.bg}`}
@@ -32,12 +29,10 @@ export default function AboutSection() {
                                         {service.description}
                                     </p>
                                 </WobbleCard>
-                            </Reveal>
                         ))}
                     </div>
                     <BackgroundBeams />
                 </div>
-            </Reveal>
             {/* about section end */}
         </>
     )

@@ -1,25 +1,23 @@
-import Reveal from "./Reveal";
-
 export default function BrandsSection() {
     const brands = [
-        { src: "./brand/vast-logo.webp", alt: "vast logo" },
-        { src: "./brand/ClickUP_Logo-1.webp", alt: "ClickUP Logo" },
-        { src: "./brand/Group-19334-1.svg", alt: "Group-19334" },
-        { src: "./brand/Group-19335-1.svg", alt: "Group-19335" },
-        { src: "./brand/sweatcoin.webp", alt: "sweatcoin" },
-        { src: "./brand/Group-18956.svg", alt: "Soflete" },
-        { src: "./brand/SH-logo-1.webp", alt: "SH logo" },
-        { src: "./brand/Afriex-1.png", alt: "Afriex" },
-        { src: "./brand/Group-19337-1.svg", alt: "Group-19337" },
-        { src: "./brand/Superprof.webp", alt: "Superprof" },
-        { src: "./brand/Alpha_work_smarter.webp", alt: "Alpha Work Smart" },
-        { src: "./brand/Voi_Technology_Logo_2021.svg-1.svg", alt: "Voi" },
+        { src: "/brand/vast-logo.webp", alt: "vast logo" },
+        { src: "/brand/ClickUP_Logo-1.webp", alt: "ClickUP Logo" },
+        { src: "/brand/Group-19334-1.svg", alt: "Group-19334" },
+        { src: "/brand/Group-19335-1.svg", alt: "Group-19335" },
+        { src: "/brand/sweatcoin.webp", alt: "sweatcoin" },
+        { src: "/brand/Group-18956.svg", alt: "Soflete" },
+        { src: "/brand/SH-logo-1.webp", alt: "SH logo" },
+        { src: "/brand/Afriex-1.png", alt: "Afriex" },
+        { src: "/brand/Group-19337-1.svg", alt: "Group-19337" },
+        { src: "/brand/Superprof.webp", alt: "Superprof" },
+        { src: "/brand/Alpha_work_smarter.webp", alt: "Alpha Work Smart" },
+        { src: "/brand/Voi_Technology_Logo_2021.svg-1.svg", alt: "Voi" },
     ];
 
     return (
         <>
             {/* hero section start */}
-            <Reveal className="w-full">
+            <div className="w-full">
                 <div className="relative flex max-w-full flex-col items-center justify-center mx-2 sm:mx-16">
                     <div className="absolute inset-y-0 left-0 h-px w-full bg-neutral-200/80 dark:bg-neutral-800/80">
                         <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
@@ -55,7 +53,7 @@ export default function BrandsSection() {
                         </div>
                     </div>
                 </div>
-            </Reveal>
+            </div>
             {/* hero section end */}
         </>
     )

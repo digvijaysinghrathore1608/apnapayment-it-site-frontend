@@ -1,5 +1,4 @@
 
-import Reveal from "@/components/frontend/Reveal";
 import { Card, CardContent } from "@/components/ui/card";
 import {
     Cpu,
@@ -19,7 +18,6 @@ export default function ExpertiseSection() {
     return (
         <>
             {/* expertise section start */}
-            <Reveal className="w-full">
                 <div className="relative flex flex-wrap w-full max-w-full items-center justify-between pt-10 sm:py-10 px-2 sm:px-16">
                     <div className="flex flex-col items-start gap-2 w-full sm:max-w-2xl">
                         <span className="text-orange-500 text-sm font-bold border-2 border-orange-500 px-2 rounded-2xl">
@@ -55,7 +53,6 @@ export default function ExpertiseSection() {
                         })}
                     </div>
                 </div>
-            </Reveal>
             {/* expertise section end */}
         </>
     )

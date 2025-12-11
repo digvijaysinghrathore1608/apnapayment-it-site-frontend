@@ -1,11 +1,9 @@
-import Reveal from "@/components/frontend/Reveal";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 
 export default function MissionSection() {
     return (
         <>
             {/* mission section start */}
-            <Reveal>
                 <div className="relative flex w-full max-w-full flex-col items-start justify-center pt-10 sm:py-10 px-2 sm:px-16">
                     <span className="text-purple-500 text-lg md:text-xl font-bold">
                         Our Missions
@@ -29,7 +27,6 @@ export default function MissionSection() {
                         ))}
                     </BentoGrid>
                 </div>
-            </Reveal>
             {/* mission section end */}
         </>
     )
@@ -48,7 +45,7 @@ const items = [
     description:
       "Empowering businesses with modern, scalable, and future-ready technology solutions.",
     header: (
-      <ImageCompo imgUri="./photo-1535223289827-42f1e9919769.jpeg" />
+      <ImageCompo imgUri="/photo-1535223289827-42f1e9919769.jpeg" />
     ),
   },
   {
@@ -56,7 +53,7 @@ const items = [
     description:
       "Building digital products and IT systems that enhance performance and accelerate growth.",
     header: (
-      <ImageCompo imgUri="./photo-1487058792275-0ad4aaf24ca7.jpeg" />
+      <ImageCompo imgUri="/photo-1487058792275-0ad4aaf24ca7.jpeg" />
     ),
   },
   {
@@ -64,7 +61,7 @@ const items = [
     description:
       "Creating clean, functional, and intuitive digital interfaces that users love.",
     header: (
-      <ImageCompo imgUri="./photo-1559028012-481c04fa702d.jpeg" />
+      <ImageCompo imgUri="/photo-1559028012-481c04fa702d.jpeg" />
     ),
   },
   {
@@ -72,7 +69,7 @@ const items = [
     description:
       "Developing solutions that improve communication, workflow efficiency, and team alignment.",
     header: (
-      <ImageCompo imgUri="./photo-1522071820081-009f0129c71c.jpeg" />
+      <ImageCompo imgUri="/photo-1522071820081-009f0129c71c.jpeg" />
     ),
   },
   {
@@ -80,7 +77,7 @@ const items = [
     description:
       "Leveraging data, insights, and research to create intelligent and reliable digital systems.",
     header: (
-      <ImageCompo imgUri="./photo-1504384308090-c894fdcc538d.jpeg" />
+      <ImageCompo imgUri="/photo-1504384308090-c894fdcc538d.jpeg" />
     ),
   },
   {
@@ -88,7 +85,7 @@ const items = [
     description:
       "Helping businesses bring innovative concepts to life with robust software engineering.",
     header: (
-      <ImageCompo imgUri="./photo-1522071820081-009f0129c71c.jpeg" />
+      <ImageCompo imgUri="/photo-1522071820081-009f0129c71c.jpeg" />
     ),
   },
   {
@@ -96,7 +93,7 @@ const items = [
     description:
       "Continuously adopting emerging technologies to create powerful new opportunities.",
     header: (
-      <ImageCompo imgUri="./photo-1504384308090-c894fdcc538d.jpeg" />
+      <ImageCompo imgUri="/photo-1504384308090-c894fdcc538d.jpeg" />
     ),
   },
 ];
