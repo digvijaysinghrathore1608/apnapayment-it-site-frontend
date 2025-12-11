@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 import Footer from "@/components/frontend/footer-section";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export function NavbarComponent({ children }: { children?: React.ReactNode }) {
     const navItems = [
@@ -38,12 +39,12 @@ export function NavbarComponent({ children }: { children?: React.ReactNode }) {
         },
         {
             name: "Contact",
-            link: "#contact",
+            link: "/contact",
         },
     ];
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+const router = useRouter();
     return (
         <div className="relative w-full">
             <Navbar>
@@ -52,7 +53,7 @@ export function NavbarComponent({ children }: { children?: React.ReactNode }) {
                     <NavbarLogo />
                     <NavItems items={navItems} />
                     <div className="flex items-center gap-4">
-                        <NavbarButton variant="primary">Book a call</NavbarButton>
+                        <NavbarButton onClick={() => router.push("/contact")} variant="primary">Book a call</NavbarButton>
                     </div>
                 </NavBody>
 
@@ -82,7 +83,7 @@ export function NavbarComponent({ children }: { children?: React.ReactNode }) {
                         ))}
                         <div className="flex w-full flex-col gap-4">
                             <NavbarButton
-                                onClick={() => setIsMobileMenuOpen(false)}
+                               onClick={() => router.push("/contact")}
                                 variant="primary"
                                 className="w-full"
                             >
