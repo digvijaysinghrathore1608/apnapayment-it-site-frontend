@@ -1,7 +1,7 @@
 "use client";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
-export default function TestimonialSection() {
+export default function TestimonialSection({heading="Our Evolution as a Software Development Company"}: {heading?: string}) {
     const testimonials = [
         {
             quote:
@@ -47,9 +47,9 @@ export default function TestimonialSection() {
                     <div className="px-4 py-10 md:py-20">
                         {/* Heading */}
                         <div className="text-center">
-                            <h2 className="text-xl sm:text-4xl font-bold">Our Evolution as a Software Development Company</h2>
+                            <h2 className="text-xl sm:text-4xl font-bold">{heading}</h2>
                         </div>
-                        <AnimatedTestimonials testimonials={testimonials} />
+                        <AnimatedTestimonials autoplay={true} testimonials={testimonials} />
                     </div>
                 </div>
             </div>
