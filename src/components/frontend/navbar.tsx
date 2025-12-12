@@ -22,20 +22,16 @@ export function NavbarComponent({ children }: { children?: React.ReactNode }) {
             link: "/services",
         },
         {
-            name: "Solutions",
-            link: "#solutions",
+            name: "Industries",
+            link: "/industries",
         },
         {
             name: "About Us",
             link: "/about-us",
         },
         {
-            name: "Portfolio",
-            link: "#portfolio",
-        },
-        {
             name: "Blogs",
-            link: "#blogs",
+            link: "/blogs",
         },
         {
             name: "Contact",

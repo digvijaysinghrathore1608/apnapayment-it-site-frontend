@@ -1,4 +1,6 @@
 import Logo from "@/components/frontend/logo";
+import { industries } from "@/data/industries";
+import { legalPages } from "@/data/legalPages";
 import { services } from "@/data/services";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
@@ -60,7 +62,7 @@ export default function Footer() {
                             <h4 className="text-lg font-semibold mb-4">Development Services</h4>
                             <ul className="space-y-2 text-sm">
                                 {services.map((service, index) => (
-                                    <li key={index}><Link href={`/services/${service.slug}`}>{service.title}</Link></li>
+                                    <li key={"service-" + index}><Link href={`/services/${service.slug}`}>{service.title}</Link></li>
                                 ))}
                             </ul>
                         </div>
@@ -69,11 +71,9 @@ export default function Footer() {
                         <div>
                             <h4 className="text-lg font-semibold mb-4">Industry We Serve</h4>
                             <ul className="space-y-2 text-sm">
-                                <li><a href="#">Fintech Solutions</a></li>
-                                <li><a href="#">Healthcare Solutions</a></li>
-                                <li><a href="#">Food & Hyperlocal</a></li>
-                                <li><a href="#">Ecommerce Solutions</a></li>
-                                <li><a href="#">Logistics & Supply Chain</a></li>
+                                {industries.map((industry, index) => (
+                                    <li key={"industry-" + index}><Link href={`/industries/${industry.slug}`}>{industry.title}</Link></li>
+                                ))}
                             </ul>
                         </div>
 
@@ -81,11 +81,9 @@ export default function Footer() {
                         <div>
                             <h4 className="text-lg font-semibold mb-4">Hire Experts</h4>
                             <ul className="space-y-2 text-sm">
-                                <li><a href="#">Hire AI Developers</a></li>
-                                <li><a href="#">Hire ML Engineers</a></li>
-                                <li><a href="#">Hire MVP Developer</a></li>
-                                <li><a href="#">Hire Cloud Engineer</a></li>
-                                <li><a href="#">Hire DevOps Engineer</a></li>
+                                <li><Link href="#">Hire Frontend Developer</Link></li>
+                                <li><Link href="#">Hire Backend Engineer</Link></li>
+                                <li><Link href="#">Hire DevOps Engineer</Link></li>
                             </ul>
                         </div>
 
@@ -95,7 +93,7 @@ export default function Footer() {
                             <ul className="space-y-3 text-sm">
                                 <li>
                                     <a href="tel:+911234567890" className="flex items-center gap-3">
-                                        <img src="/flag/indian_flag.png" className="w-6" />
+                                        <img src="/flag/indian_flag.png" className="w-6" alt="indian flag" />
                                         (+91) 123-456-7890
                                     </a>
                                 </li>
@@ -134,11 +132,15 @@ export default function Footer() {
 
                         <ul className="flex gap-6 text-sm flex-wrap">
                             <li><Link href="/about-us">About Us</Link></li>
-                            <li><a href="#">Career</a></li>
-                            <li><a href="#">Blog</a></li>
+                            {/* <li><a href="#">Career</a></li> */}
+                            <li><Link href="/blogs">Blog</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Site Map</a></li>
+                            {Object.entries(legalPages).map(([slug, page]: any) => (
+                                <li key={"legal-" + slug}>
+                                    <Link href={`/${slug}`}>{page.title}</Link>
+                                </li>
+                            ))}
+                            {/* <li><a href="#">Site Map</a></li> */}
                         </ul>
                     </div>
                 </div>
