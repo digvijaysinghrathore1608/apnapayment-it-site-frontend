@@ -17,7 +17,7 @@ export default function Logo({ text_color = "black" }: { text_color?: string }) 
             className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal cursor-pointer"
         >
             <img
-                src="https://assets.aceternity.com/logo-dark.png"
+                src="/logo/logo.png"
                 alt="logo"
                 width={30}
                 height={30}

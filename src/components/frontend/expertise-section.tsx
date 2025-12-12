@@ -1,19 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import {
-    Cpu,
-    HeartPulse,
-    Dumbbell,
-    Truck,
-    ShoppingBag,
-    Utensils,
-    Plane,
-    GraduationCap,
-    Home,
-    Sparkles,
-    Users,
-    Briefcase
-} from "lucide-react";
+import { industries } from "@/data/industries";
+
 export default function ExpertiseSection() {
     return (
         <>
@@ -32,7 +20,7 @@ export default function ExpertiseSection() {
                         <p className="text-gray-500 text-sm sm:text-base sm:font-bold w-full">With deep expertise in AI technologies and a keen understanding of industry-specific needs, we drive innovation and success for our clients, leveraging advanced AI solutions to exceed expectations every time.</p>
                     </div>
                     <div className="w-full sm:max-w-2xl grid grid-cols-2 md:grid-cols-3 gap-2">
-                        {services.map((item, idx) => {
+                        {industries.map((item, idx) => {
                             const Icon = item.icon;
                             return (
                                 <Card
@@ -57,65 +45,3 @@ export default function ExpertiseSection() {
         </>
     )
 }
-const services = [
-    {
-        title: "Fintech",
-        icon: Cpu,
-        color: "text-blue-400"
-    },
-    {
-        title: "Healthcare",
-        icon: HeartPulse,
-        color: "text-red-400"
-    },
-    {
-        title: "Fitness",
-        icon: Dumbbell,
-        color: "text-green-400"
-    },
-    {
-        title: "Logistic",
-        icon: Truck,
-        color: "text-yellow-400"
-    },
-    {
-        title: "e-Commerce",
-        icon: ShoppingBag,
-        color: "text-pink-400"
-    },
-    {
-        title: "Food & Hyperlocal",
-        icon: Utensils,
-        color: "text-orange-400"
-    },
-    {
-        title: "Travel",
-        icon: Plane,
-        color: "text-purple-400"
-    },
-    {
-        title: "Education",
-        icon: GraduationCap,
-        color: "text-green-300"
-    },
-    {
-        title: "Home Inspection",
-        icon: Home,
-        color: "text-teal-400"
-    },
-    {
-        title: "Wellness",
-        icon: Sparkles,
-        color: "text-emerald-400"
-    },
-    {
-        title: "Social & Dating",
-        icon: Users,
-        color: "text-rose-400"
-    },
-    {
-        title: "Job & Employment",
-        icon: Briefcase,
-        color: "text-indigo-400"
-    }
-];

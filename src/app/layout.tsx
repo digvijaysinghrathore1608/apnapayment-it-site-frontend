@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/logo/logo.png",
         width: 1200,
         height: 630,
         alt: "Apna IT Solution OG Image",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description:
       "Modern IT services, custom software development, mobile apps and cloud deployment.",
     creator: "@apnaitsolution",
-    images: ["/images/og-image.png"],
+    images: ["/logo/logo.pn"],
   },
 
   // Additional meta
