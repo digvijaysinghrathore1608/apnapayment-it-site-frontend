@@ -1,4 +1,5 @@
 import Logo from "@/components/frontend/logo";
+import { contact_email, contact_phone } from "@/data/business";
 import { industries } from "@/data/industries";
 import { legalPages } from "@/data/legalPages";
 import { services } from "@/data/services";
@@ -92,17 +93,17 @@ export default function Footer() {
                             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
                             <ul className="space-y-3 text-sm">
                                 <li>
-                                    <a href="tel:+911234567890" className="flex items-center gap-3">
+                                    <a href={`tel:${contact_phone}`} className="flex items-center gap-3">
                                         <img src="/flag/indian_flag.png" className="w-6" alt="indian flag" />
-                                        (+91) 123-456-7890
+                                        {contact_phone}
                                     </a>
                                 </li>
                             </ul>
 
                             <div className="mt-4">
                                 <p className="font-semibold">Career:</p>
-                                <a href="mailto:hr@apnapayment.com" className="text-sm">
-                                    hr@apnapayment.com
+                                <a href={`mailto:${contact_email}`} className="text-sm">
+                                    {contact_email}
                                 </a>
                             </div>
 

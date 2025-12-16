@@ -4,10 +4,11 @@ import GallerySection from "@/components/frontend/gallery-section";
 import TestimonialSection from "@/components/frontend/testimonial-section";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { site_name } from "@/data/business";
 import Link from "next/link";
 
 export const metadata = {
-    title: "About Us | Apna IT Solutions",
+    title: `About Us | ${site_name}`,
 };
 
 export default function AboutUs() {
@@ -39,7 +40,7 @@ export default function AboutUs() {
                             </h1>
 
                             <p className="max-w-2xl text-center text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
-                                Apna IT Solutions is a full-stack technology team specializing in web development, mobile apps,
+                                {site_name} is a full-stack technology team specializing in web development, mobile apps,
                                 cloud deployment, automation and custom business software.
                                 <br /><br />
                                 For over a decade, we’ve helped startups, enterprises and agencies build reliable digital products
@@ -69,11 +70,11 @@ export default function AboutUs() {
                             </p>
 
                             <h2 className="text-2xl md:text-4xl font-bold mt-2 text-gray-800 dark:text-white">
-                                Welcome to Apna IT Solutions
+                                Welcome to {site_name}
                             </h2>
 
                             <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
-                                At Apna IT Solutions, we deliver future-ready digital products using
+                                At {site_name}, we deliver future-ready digital products using
                                 modern technologies. We specialize in Web Development, Mobile App Development,
                                 Cloud Deployment, Automation, Backend Systems, and Full-Stack IT solutions.
                                 <br /><br />

@@ -135,3 +135,42 @@ export const serviceDetails: any = {
         technologies: ["Laravel", "Django", "React", "MySQL", "Redis"],
     },
 };
+
+export const about_services = [
+    {
+        title: "Custom Software Development Services",
+        description:
+            "We design and develop secure, scalable, and custom software solutions tailored to your business processes, helping you improve efficiency, performance, and long-term growth.",
+        bg: "bg-pink-800",
+    },
+    {
+        title: "Web & Mobile Application Development",
+        description:
+            "We build high-performance, responsive websites and mobile applications that deliver seamless user experiences, strong brand presence, and measurable business results.",
+        bg: "",
+    },
+    {
+        title: "Cloud Computing & DevOps Solutions",
+        description:
+            "Leverage modern cloud infrastructure and DevOps automation to deploy, scale, and manage applications efficiently with improved reliability, security, and speed.",
+        bg: "bg-blue-900",
+    },
+    {
+        title: "Business Process Automation Services",
+        description:
+            "Automate repetitive workflows and integrate systems to streamline operations, reduce manual effort, and enhance productivity across your organization.",
+        bg: "",
+    },
+    {
+        title: "IT Consulting & Digital Transformation",
+        description:
+            "Our IT consulting services help you choose the right technologies, optimize costs, and create a future-ready digital strategy aligned with your business goals.",
+        bg: "bg-pink-800",
+    },
+    {
+        title: "Cybersecurity & Data Protection Solutions",
+        description:
+            "Protect your digital assets with advanced cybersecurity solutions, including threat monitoring, data encryption, backup, compliance, and risk management services.",
+        bg: "bg-blue-900",
+    },
+];

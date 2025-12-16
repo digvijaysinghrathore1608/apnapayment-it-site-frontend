@@ -18,6 +18,10 @@ import { useRouter } from "next/navigation";
 export function NavbarComponent({ children }: { children?: React.ReactNode }) {
     const navItems = [
         {
+            name: "Home",
+            link: "/",
+        },
+        {
             name: "Services",
             link: "/services",
         },

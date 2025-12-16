@@ -1,6 +1,7 @@
 import BlogDetails from "@/components/frontend/blog/blog-details";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { blogs } from "@/data/blogs";
+import { site_name } from "@/data/business";
 import { notFound } from "next/navigation";
 
 // -------- DYNAMIC METADATA ----------
@@ -13,7 +14,7 @@ export async function generateMetadata({ params }: any) {
     }
 
     return {
-        title: `${blog.title} | Apna IT Solutions`,
+        title: `${blog.title} | ${site_name}`,
         description: blog.short,
     };
 }

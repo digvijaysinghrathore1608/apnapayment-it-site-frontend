@@ -1,9 +1,10 @@
 import BlogCard from "@/components/frontend/blog/blog-card";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { blogs } from "@/data/blogs";
+import { site_name } from "@/data/business";
 
 export const metadata = {
-    title: "Blogs | Apna IT Solutions",
+    title: `Blogs | ${site_name}`,
     description: "We provide IT services like Web Development, App Development, UI/UX, Cloud Deployment & Automation.",
 };
 
