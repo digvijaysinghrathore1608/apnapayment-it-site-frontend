@@ -3,6 +3,7 @@ import { Check, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { industryDetails } from "@/data/industries";
+import { site_name } from "@/data/business";
 
 
 // -------- DYNAMIC METADATA ----------
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: any) {
     }
 
     return {
-        title: `${industry.title} | Apna IT Solutions`,
+        title: `${industry.title} | ${site_name}`,
         description: industry.description,
     };
 }

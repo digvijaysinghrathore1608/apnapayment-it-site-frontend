@@ -1,10 +1,11 @@
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { site_name } from "@/data/business";
 import { industries } from "@/data/industries";
 import { CheckCircle } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Industries | Apna IT Solutions",
+    title: `Industries | ${site_name}`,
     description: "We provide IT services like Web Development, App Development, UI/UX, Cloud Deployment & Automation.",
 };
 

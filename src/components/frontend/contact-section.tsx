@@ -1,6 +1,7 @@
 
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import ContactForm from "@/components/frontend/contact-form";
+import { address, contact_email, contact_phone, working_hours } from "@/data/business";
 
 export default function ContactSection() {
 
@@ -34,28 +35,28 @@ export default function ContactSection() {
                                 <div>
                                     <p className="text-sm text-gray-400">📍 Address</p>
                                     <p className="font-medium text-gray-300">
-                                        123 Business Street, Jaipur, Rajasthan, India
+                                        {address}
                                     </p>
                                 </div>
 
                                 <div>
                                     <p className="text-sm text-gray-400">📞 Phone</p>
                                     <p className="font-medium text-gray-300">
-                                        +91 98765 43210
+                                        {contact_phone}
                                     </p>
                                 </div>
 
                                 <div>
                                     <p className="text-sm text-gray-400">📧 Email</p>
                                     <p className="font-medium text-gray-300">
-                                        contact@company.com
+                                        {contact_email}
                                     </p>
                                 </div>
 
                                 <div>
                                     <p className="text-sm text-gray-400">⏰ Working Hours</p>
                                     <p className="font-medium text-gray-300">
-                                        Mon – Sat : 9:00 AM – 7:00 PM
+                                        {working_hours}
                                     </p>
                                 </div>
                             </div>

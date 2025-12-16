@@ -1,8 +1,10 @@
 import ContactSection from "@/components/frontend/contact-section";
+import ContactTabsSEOEnhanced from "@/components/frontend/contact/contact-business-section";
+import { site_name } from "@/data/business";
 import { AtSign, Phone } from "lucide-react";
 
 export const metadata = {
-    title: "Contact | Apna IT Solutions",
+    title: `Contact | ${site_name}`,
 };
 
 export default function Contact() {
@@ -26,7 +28,7 @@ export default function Contact() {
                     </div>
 
 
-                    <div className="w-full px-2 sm:px-16 py-10 sm:py-20">
+                    <div className="w-full px-2 sm:px-16 py-10">
 
                         {/* Top Heading */}
                         <div className="flex flex-col items-center">
@@ -35,95 +37,17 @@ export default function Contact() {
                             </h4>
 
                             <div className="text-center">
-                                <h2 className="text-2xl sm:text-3xl capitalize font-bold">have any query, no hesitation connect any time.</h2>
+                                <h2 className="text-2xl sm:text-3xl capitalize font-bold">Connect With the Right Team.</h2>
                             </div>
 
                             <div className="text-center mt-7">
-                                <p className="text-gray-600 font-medium">Get In Touch With Us</p>
+                                <p className="text-gray-600 font-medium">Whether you’re a business looking to grow, need expert consultation,
+                                    or want to build your career with us — we’re here to help.</p>
                             </div>
                         </div>
 
                         {/* Contact Cards */}
-                        <div className="my-5 px-2 lg:px-0">
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-
-                                {/* === Card 1: Business === */}
-                                <div className="border-contact-card py-6 ps-3 rounded-xl shadow-sm bg-white">
-                                    <h3 className="text-center font-semibold textFontSize mb-4 capitalize">
-                                        For Business
-                                    </h3>
-
-                                    <a
-                                        href="mailto:sales@apnapayment.com"
-                                        className="flex items-center gap-3 mb-3"
-                                        aria-label="business-email"
-                                    >
-                                        <AtSign className="text-yellow-300"/>
-                                        <p className="mb-0 text-blue-600 font-medium">sales@apnapayment.com</p>
-                                    </a>
-
-                                    <a
-                                        href="tel:+911234567890"
-                                        className="flex items-center gap-3"
-                                        aria-label="business-call"
-                                    >
-                                        <Phone className="text-red-300"/>
-                                        <p className="mb-0 text-blue-600 font-medium">(+91) 123-456-7890</p>
-                                    </a>
-                                </div>
-
-                                {/* === Card 2: Consultation === */}
-                                <div className="border-contact-card py-6 ps-3 rounded-xl shadow-sm bg-white">
-                                    <h3 className="text-center font-semibold textFontSize mb-4 capitalize">
-                                        For Consultation
-                                    </h3>
-
-                                    <a
-                                        href="mailto:sales@apnapayment.com"
-                                        className="flex items-center gap-3 mb-3"
-                                        aria-label="consult-email"
-                                    >
-                                        <AtSign className="text-yellow-300"/>
-                                        <p className="mb-0 text-blue-600 font-medium">sales@apnapayment.com</p>
-                                    </a>
-
-                                    <a
-                                        href="tel:+911234567890"
-                                        className="flex items-center gap-3"
-                                        aria-label="consult-call"
-                                    >
-                                        <Phone className="text-red-300"/>
-                                        <p className="mb-0 text-blue-600 font-medium">(+91) 123-456-7890</p>
-                                    </a>
-                                </div>
-
-                                {/* === Card 3: Career === */}
-                                <div className="border-contact-card py-6 ps-3 rounded-xl shadow-sm bg-white">
-                                    <h3 className="text-center font-semibold textFontSize mb-4 capitalize">
-                                        For Career
-                                    </h3>
-
-                                    <a
-                                        href="mailto:hr@apnapayment.com"
-                                        className="flex items-center gap-3 mb-3"
-                                        aria-label="career-email"
-                                    >
-                                        <AtSign className="text-yellow-300"/>
-                                        <p className="mb-0 text-blue-600 font-medium">hr@apnapayment.com</p>
-                                    </a>
-
-                                    <a
-                                        href="tel:+911234567890"
-                                        className="flex items-center gap-3"
-                                        aria-label="career-call"
-                                    >
-                                        <Phone className="text-red-300"/>
-                                        <p className="mb-0 text-blue-600 font-medium">(+91) 123-456-7890</p>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
+                        <ContactTabsSEOEnhanced />
                     </div>
 
                 </div>
