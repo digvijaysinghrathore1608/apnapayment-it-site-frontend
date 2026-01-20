@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/popover"
 
 import { ChevronDown } from "lucide-react"
-import { email_send_url, site_name } from "@/data/business"
+import { email_send_url, query_reciver_email, site_name } from "@/data/business"
 
 
 type ErrorsType = {
@@ -33,6 +33,8 @@ export default function ContactForm({ className }: { className?: string }) {
     email: "",
     phone: "",
     message: "",
+    to: query_reciver_email,
+    sender_name: site_name,
     services: [] as string[],
   })
 
@@ -117,6 +119,8 @@ export default function ContactForm({ className }: { className?: string }) {
         email: "",
         phone: "",
         message: "",
+        to: query_reciver_email,
+        sender_name: site_name,
         services: [],
       })
 
