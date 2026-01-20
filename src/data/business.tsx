@@ -4,6 +4,7 @@ export const site_name = "Apna IT Solution";
 export const site_logo = "/logo/logo.png";
 export const contact_email = "hr@apnapayment.com";
 export const contact_phone = "+911234567890";
+export const query_reciver_email = "ankit.sharma@apnapayment.com";
 
 export const contact_details = [
     {
@@ -53,4 +54,4 @@ export const contact_details = [
 export const address = "123 Business Street, Jaipur, Rajasthan, India";
 export const working_hours = "Mon – Sat : 9:00 AM – 7:00 PM";
 
-export const email_send_url = "https://l5an4lw120.execute-api.ap-south-1.amazonaws.com/api/services/email/send";
+export const email_send_url = "https://l5an4lw120.execute-api.ap-south-1.amazonaws.com/api/services/email/query_notify_email";
